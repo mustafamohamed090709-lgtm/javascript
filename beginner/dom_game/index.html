@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Rush | Reaction Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="logo">NEON<span>RUSH</span></div>
+      <p>How fast are your reactions?</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>YOUR SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>BEST SCORE</span>
+        <strong id="high-score">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>TIME LEFT</span>
+        <strong><span id="timer">30</span>s</strong>
+      </div>
+      <div class="stat-card">
+        <span>COMBO</span>
+        <strong id="combo">x0</strong>
+      </div>
+    </section>
+
+    <section class="game-panel">
+      <div class="game-top">
+        <span id="status">READY TO PLAY?</span>
+        <span id="level">LEVEL 1</span>
+      </div>
+
+      <div id="game-board">
+        <div class="welcome">
+          <div class="welcome-icon">✦</div>
+          <h2>Hit your targets.</h2>
+          <p>Click the glowing circles before they disappear.</p>
+          <button id="start-btn">START GAME →</button>
+        </div>
+      </div>
+
+      <div class="game-bottom">
+        <span id="message" aria-live="polite">Ready when you are.</span>
+        <span>30 SECONDS</span>
+      </div>
+    </section>
+
+    <section class="instructions">
+      <div class="instruction-icon">⚡</div>
+      <div>
+        <h3>How to play</h3>
+        <p>Click the targets to score points. Build combos for bonus points. Targets get smaller and faster as you level up!</p>
+      </div>
+    </section>
+
+    <footer>
+      BUILT WITH HTML <span>•</span> CSS <span>•</span> JAVASCRIPT
+    </footer>
+  </main>
+</body>
+</html>
